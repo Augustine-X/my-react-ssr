@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "jsx": "react",
+      "lib": [
+        "dom",
+        "ESNext"
+      ],
+
+      // 让自己写的 /types 目录下的 .d.ts 文件生效
+      "typeRoots": ["./node_modules/@types", "./types"],
+      "resolveJsonModule": true
+    },
+
+    // include 里面放 源码文件目录
+    "include": [
+        "./src",
+        "./types",
+    ]
+    
+}
